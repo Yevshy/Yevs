@@ -1,0 +1,218 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red13\green100\blue1;\red0\green0\blue0;\red151\green0\blue126;
+\red20\green0\blue196;\red181\green0\blue19;\red136\green93\blue48;}
+{\*\expandedcolortbl;;\cssrgb\c0\c45490\c0;\csgray\c0;\cssrgb\c66667\c5098\c56863;
+\cssrgb\c10980\c0\c81176;\cssrgb\c76863\c10196\c8627;\cssrgb\c60784\c43922\c24706;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 /* style.css */\cf3 \
+\
+\cf2 /* General Reset */\cf3 \
+* \{\
+  \cf4 margin\cf3 : \cf5 0\cf3 ;\
+  \cf4 padding\cf3 : \cf5 0\cf3 ;\
+  \cf4 box-sizing\cf3 : border-box;\
+\}\
+\
+\cf4 html\cf3 , \cf4 body\cf3  \{\
+  \cf4 height\cf3 : \cf5 100%\cf3 ;\
+  \cf4 font-family\cf3 : \cf6 'Inter'\cf3 , sans-serif;\
+  \cf4 background-color\cf3 : \cf5 #0D1117\cf3 ; \cf2 /* very dark blue background */\cf3 \
+  \cf4 color\cf3 : \cf5 #ffffff\cf3 ;\
+\}\
+\
+\cf2 /* Sticky Header */\cf3 \
+\cf4 header\cf3  \{\
+  \cf4 position\cf3 : sticky;\
+  \cf4 top\cf3 : \cf5 0\cf3 ;\
+  \cf4 width\cf3 : \cf5 100%\cf3 ;\
+  \cf4 background\cf3 : rgba(\cf5 13\cf3 , \cf5 17\cf3 , \cf5 23\cf3 , \cf5 0.9\cf3 );\
+  backdrop-\cf4 filter\cf3 : blur(\cf5 10px\cf3 );\
+  \cf4 padding\cf3 : \cf5 20px\cf3  \cf5 40px\cf3 ;\
+  \cf4 z-index\cf3 : \cf5 1000\cf3 ;\
+  \cf4 display\cf3 : flex;\
+  \cf4 justify-content\cf3 : space-between;\
+  \cf4 align-items\cf3 : center;\
+  \cf4 transition\cf3 : background \cf5 0.3s\cf3  ease;\
+\}\
+\
+\cf4 header\cf3  \cf4 a\cf3  \{\
+  \cf4 color\cf3 : \cf5 #ffffff\cf3 ;\
+  \cf4 text-decoration\cf3 : none;\
+  \cf4 margin-left\cf3 : \cf5 20px\cf3 ;\
+  \cf4 font-weight\cf3 : \cf5 500\cf3 ;\
+  \cf4 transition\cf3 : color \cf5 0.3s\cf3  ease;\
+\}\
+\
+\cf4 header\cf3  \cf4 a\cf3 :hover \{\
+  \cf4 color\cf3 : \cf5 #8b5cf6\cf3 ; \cf2 /* Violet hover */\cf3 \
+\}\
+\
+\cf2 /* Hero */\cf3 \
+\cf7 .hero\cf3  \{\
+  \cf4 text-align\cf3 : center;\
+  \cf4 margin\cf3 : \cf5 80px\cf3  \cf5 20px\cf3 ;\
+\}\
+\
+\cf7 .hero\cf3  \cf4 h1\cf3  \{\
+  \cf4 font-size\cf3 : \cf5 48px\cf3 ;\
+  \cf4 font-weight\cf3 : \cf5 700\cf3 ;\
+\}\
+\
+\cf7 .hero\cf3  \cf4 h1\cf3  \cf4 span\cf3  \{\
+  \cf4 color\cf3 : \cf5 #8b5cf6\cf3 ;\
+\}\
+\
+\cf2 /* Projects Grid */\cf3 \
+\cf7 .projects\cf3  \{\
+  \cf4 margin\cf3 : \cf5 80px\cf3  \cf5 40px\cf3 ;\
+  \cf4 display\cf3 : grid;\
+  \cf4 grid-template-columns\cf3 : repeat(auto-fit, minmax(\cf5 280px\cf3 , \cf5 1\cf3 fr));\
+  \cf4 gap\cf3 : \cf5 30px\cf3 ;\
+  \cf4 position\cf3 : relative;\
+\}\
+\
+\cf7 .project-tile\cf3  \{\
+  \cf4 background-color\cf3 : \cf5 #161B22\cf3 ;\
+  \cf4 padding\cf3 : \cf5 20px\cf3 ;\
+  \cf4 border-radius\cf3 : \cf5 12px\cf3 ;\
+  \cf4 overflow\cf3 : hidden;\
+  \cf4 cursor\cf3 : pointer;\
+  \cf4 transition\cf3 : transform \cf5 0.3s\cf3  ease, box-shadow \cf5 0.3s\cf3  ease;\
+  \cf4 position\cf3 : relative;\
+\}\
+\
+\cf7 .project-tile\cf3 :hover \{\
+  \cf4 transform\cf3 : translateY(-\cf5 8px\cf3 );\
+  \cf4 box-shadow\cf3 : \cf5 0\cf3  \cf5 8px\cf3  \cf5 20px\cf3  rgba(\cf5 139\cf3 , \cf5 92\cf3 , \cf5 246\cf3 , \cf5 0.3\cf3 );\
+\}\
+\
+\cf2 /* Footer */\cf3 \
+\cf4 footer\cf3  \{\
+  \cf4 text-align\cf3 : center;\
+  \cf4 padding\cf3 : \cf5 40px\cf3  \cf5 20px\cf3 ;\
+  \cf4 font-size\cf3 : \cf5 14px\cf3 ;\
+  \cf4 color\cf3 : \cf5 #8b949e\cf3 ;\
+\}\
+\
+\cf2 /* About Page */\cf3 \
+\cf7 .about\cf3  \{\
+  \cf4 max-width\cf3 : \cf5 800px\cf3 ;\
+  \cf4 margin\cf3 : \cf5 80px\cf3  auto;\
+  \cf4 padding\cf3 : \cf5 0\cf3  \cf5 20px\cf3 ;\
+  \cf4 line-height\cf3 : \cf5 1.7\cf3 ;\
+\}\
+\
+\cf2 /* Inner Project Page */\cf3 \
+\cf7 .project-page\cf3  \{\
+  \cf4 max-width\cf3 : \cf5 1000px\cf3 ;\
+  \cf4 margin\cf3 : \cf5 80px\cf3  auto;\
+  \cf4 padding\cf3 : \cf5 0\cf3  \cf5 20px\cf3 ;\
+  \cf4 text-align\cf3 : center;\
+\}\
+\
+\cf7 .project-page\cf3  \cf4 img\cf3  \{\
+  \cf4 width\cf3 : \cf5 100%\cf3 ;\
+  \cf4 border-radius\cf3 : \cf5 12px\cf3 ;\
+  \cf4 margin-top\cf3 : \cf5 20px\cf3 ;\
+\}\
+\
+\cf7 .project-page\cf3  \cf4 h2\cf3  \{\
+  \cf4 font-size\cf3 : \cf5 32px\cf3 ;\
+  \cf4 margin-bottom\cf3 : \cf5 10px\cf3 ;\
+\}\
+\
+\cf7 .project-page\cf3  \cf4 p\cf3  \{\
+  \cf4 color\cf3 : \cf5 #8b949e\cf3 ;\
+  \cf4 font-size\cf3 : \cf5 16px\cf3 ;\
+\}\
+\
+\cf2 /* Social Icons */\cf3 \
+\cf7 .social-icons\cf3  \{\
+  \cf4 display\cf3 : flex;\
+  \cf4 gap\cf3 : \cf5 15px\cf3 ;\
+\}\
+\
+\cf7 .social-icons\cf3  \cf4 a\cf3  \{\
+  \cf4 font-size\cf3 : \cf5 20px\cf3 ;\
+  \cf4 color\cf3 : \cf5 #ffffff\cf3 ;\
+  \cf4 transition\cf3 : transform \cf5 0.3s\cf3  ease;\
+\}\
+\
+\cf7 .social-icons\cf3  \cf4 a\cf3 :hover \{\
+  \cf4 transform\cf3 : scale(\cf5 1.2\cf3 );\
+\}\
+\
+\cf2 /* Custom Cursor */\cf3 \
+\cf4 body\cf7 .custom-cursor\cf3  \{\
+  \cf4 cursor\cf3 : none;\
+\}\
+\
+\cf7 .cursor-dot\cf3  \{\
+  \cf4 width\cf3 : \cf5 8px\cf3 ;\
+  \cf4 height\cf3 : \cf5 8px\cf3 ;\
+  \cf4 background\cf3 : \cf5 #8b5cf6\cf3 ;\
+  \cf4 border-radius\cf3 : \cf5 50%\cf3 ;\
+  \cf4 position\cf3 : fixed;\
+  \cf4 pointer-events\cf3 : none;\
+  \cf4 transform\cf3 : translate(-\cf5 50%\cf3 , -\cf5 50%\cf3 );\
+  \cf4 z-index\cf3 : \cf5 9999\cf3 ;\
+\}\
+\
+\cf7 .cursor-outline\cf3  \{\
+  \cf4 width\cf3 : \cf5 32px\cf3 ;\
+  \cf4 height\cf3 : \cf5 32px\cf3 ;\
+  \cf4 border\cf3 : \cf5 2px\cf3  solid \cf5 #8b5cf6\cf3 ;\
+  \cf4 border-radius\cf3 : \cf5 50%\cf3 ;\
+  \cf4 position\cf3 : fixed;\
+  \cf4 pointer-events\cf3 : none;\
+  \cf4 transform\cf3 : translate(-\cf5 50%\cf3 , -\cf5 50%\cf3 );\
+  \cf4 z-index\cf3 : \cf5 9998\cf3 ;\
+\}\
+\
+\cf2 /* Blur Circle (background behind projects) */\cf3 \
+\cf7 .projects\cf3 ::before \{\
+  \cf4 content\cf3 : \cf6 ""\cf3 ;\
+  \cf4 position\cf3 : absolute;\
+  \cf4 top\cf3 : -\cf5 200px\cf3 ;\
+  \cf4 left\cf3 : \cf5 50%\cf3 ;\
+  \cf4 transform\cf3 : translateX(-\cf5 50%\cf3 );\
+  \cf4 width\cf3 : \cf5 600px\cf3 ;\
+  \cf4 height\cf3 : \cf5 600px\cf3 ;\
+  \cf4 background\cf3 : radial-gradient(circle, rgba(\cf5 139\cf3 , \cf5 92\cf3 , \cf5 246\cf3 , \cf5 0.3\cf3 ) \cf5 0%\cf3 , transparent \cf5 70%\cf3 );\
+  \cf4 filter\cf3 : blur(\cf5 80px\cf3 );\
+  \cf4 z-index\cf3 : -\cf5 1\cf3 ;\
+\}\
+\
+\cf2 /* Responsive */\cf3 \
+\cf4 @media\cf3  (\cf4 max-width\cf3 : \cf5 600px\cf3 ) \{\
+  \cf7 .hero\cf3  \cf4 h1\cf3  \{\
+    \cf4 font-size\cf3 : \cf5 32px\cf3 ;\
+  \}\
+\}\
+\
+/* Add this to your style.css */\
+\
+#custom-cursor \{\
+  width: 12px;\
+  height: 12px;\
+  background-color: violet;\
+  border-radius: 50%;\
+  position: fixed;\
+  transform: translate(-50%, -50%);\
+  pointer-events: none;\
+  z-index: 9999;\
+  transition: background-color 0.2s, transform 0.15s;\
+\}\
+\
+.hovered #custom-cursor \{\
+  transform: translate(-50%, -50%) scale(2);\
+  background-color: #ff99ff;\
+\}\
+\
+body.fade-out \{\
+  opacity: 0;\
+  transition: opacity 0.3s ease-out;\
+\}}
